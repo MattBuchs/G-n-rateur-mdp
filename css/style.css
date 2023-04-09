@@ -1,0 +1,97 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Open sans, Helvetica, sans-serif;
+  background: #111;
+  padding: clamp(20px, 5vw, 50px) 10px 10px;
+  color: #fff;
+}
+
+form {
+  width: 550px;
+  margin: 100px auto;
+}
+
+input[type="text"] {
+  width: 91%;
+  border: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  outline: 0;
+  color: #fff;
+  padding: 0 6px;
+  font-size: 1.2rem;
+}
+
+input[type="text"]:focus {
+  outline: 1px solid #fff;
+  border-radius: 6px;
+}
+
+.container-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copy {
+  background-color: #fff;
+  height: 40px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+img {
+  width: 20px;
+}
+
+.range {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.range input {
+  margin-top: 10px;
+}
+
+fieldset {
+  margin-top: 20px;
+  line-height: 2;
+}
+
+fieldset label {
+  margin-left: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+button {
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  padding: 6px 30px;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(0.95);
+  background-color: #ffffff18;
+  text-shadow: 0 0 10px #000;
+}
